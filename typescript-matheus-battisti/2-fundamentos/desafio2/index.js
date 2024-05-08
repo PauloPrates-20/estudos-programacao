@@ -1,3 +1,4 @@
-var x = 10;
-var stringX = x.toString();
+"use strict";
+let x = 10;
+let stringX = x.toString();
 console.log("O número é " + stringX);
