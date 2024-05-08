@@ -1,8 +1,9 @@
-var FIRST_NAME = "Paulo";
-var ANOTHER_NAME = 1;
-var X = true;
+"use strict";
+const FIRST_NAME = "Paulo";
+const ANOTHER_NAME = 1;
+const X = true;
 function greeting(name) {
-    console.log("Ol\u00E1 ".concat(name));
+    console.log(`Olá ${name}`);
 }
 greeting(FIRST_NAME);
 // greeting(ANOTHER_NAME);

@@ -6,3 +6,5 @@ let inf = "Teste";
 
 // inf = 1;
 // ann = 1;
+
+console.log("Testando 3");
