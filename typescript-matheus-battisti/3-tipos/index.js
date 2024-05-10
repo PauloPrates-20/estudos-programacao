@@ -34,7 +34,7 @@ setTimeout(function () {
     // console.log(parseFloat(SALARY));
     // console.log(SALARY);
 }, 2000);
-// 7 - propriedades tipadas
+// 7 - tipagem de objetos
 function passCoordinates(coord) {
     console.log("X coordinates: " + coord.x);
     console.log("Y coordinates: " + coord.y);
@@ -44,3 +44,32 @@ passCoordinates(OBJ_COORD);
 // passCoordinates([1, 2]);
 var OBJ_PESSOA = { nome: "Paulo", sobrenome: "Prates" };
 // mais comum utilizar inferência para objetos
+// 8 - propriedades opcionais (utiliza uma interrogação)
+function showNumbers(a, b, c) {
+    console.log("A: " + a);
+    console.log("B: " + b);
+    if (c) {
+        console.log("C: " + c);
+    }
+}
+showNumbers(1, 2, 3);
+showNumbers(4, 5);
+// 9 - validando argumentos opcionais
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return console.log("Ol\u00E1 ".concat(firstName, " ").concat(lastName, ". Tudo bem?"));
+    }
+    return console.log("Ol\u00E1 ".concat(firstName, ". Tudo bem?"));
+}
+advancedGreeting("Paulo", "Prates");
+advancedGreeting("Paulo");
+// 10 - Union type
+// Determina dois ou mais tipos para a variável
+// sintaxe variável: tipo1 | tipo2 | etc.
+function showBalance(balance) {
+    console.log("O saldo da conta \u00E9 R$".concat(balance));
+}
+showBalance(100);
+showBalance("500");
+var ARR_2 = [1, "teste", true];
+console.log(ARR_2);
