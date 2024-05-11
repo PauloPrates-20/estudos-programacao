@@ -73,3 +73,40 @@ showBalance(100);
 showBalance("500");
 var ARR_2 = [1, "teste", true];
 console.log(ARR_2);
+// 11 - Avancando em union types
+// validacao de tipos
+function showUserRole(role) {
+    if (typeof (role) === "boolean") {
+        return "Usuario nao aprovado";
+    }
+    return "A funcao do usuario e ".concat(role);
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Gerente"));
+function showId(id) {
+    console.log("O id e ".concat(id));
+}
+showId(1);
+showId("200");
+function showCoords(obj) {
+    console.log("X: ".concat(obj.x, " Y: ").concat(obj.y, " Z: ").concat(obj.z));
+}
+var COORD_OBJ = { x: 100, y: 200, z: 100.5 };
+showCoords(COORD_OBJ);
+var SOME_PERSON = { name: "Paulo", age: 20 };
+console.log(SOME_PERSON);
+// type personType = {
+//     age: number
+// }
+// 15 - literal types
+// permite colocar valores como tipos
+var teste;
+teste = "testando";
+function showDirection(direction) {
+    console.log("A direcao e ".concat(direction));
+}
+showDirection("right");
+// showDirection("top");
+// 16 - non-null assertion operator | caractere !
+var P = document.getElementById("some-p");
+console.log(P.innerText);
