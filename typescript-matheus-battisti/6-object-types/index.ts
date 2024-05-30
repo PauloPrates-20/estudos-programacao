@@ -56,7 +56,7 @@ console.log(fusca);
 
 // fusca.wheels = 5
 
-// Index Signature | utilizado quando não se sabe o nome das chaves mas os tipos são conhecidos
+// 4 - Index Signature | utilizado quando não se sabe o nome das chaves mas os tipos são conhecidos
 interface CoordObject {
   [index: string]: number
 }
@@ -69,7 +69,7 @@ console.log(coords);
 
 // coords.z = "teste"
 
-// Extending Types | utilizado como herança para criar tipos mais complexos a partir de interfaces, através da instrução extends
+// 5 - Extending Types | utilizado como herança para criar tipos mais complexos a partir de interfaces, através da instrução extends
 interface Human {
   nome: string,
   age: Number
@@ -92,3 +92,69 @@ const goku: SuperHuman = {
 
 console.log(goku);
 console.log(goku.superPowers[1]);
+
+// 6 - Intersection Types | Utiliza operado & para concatenar interfaces
+interface Character {
+  name: string,
+}
+
+interface Gun {
+  type: string,
+  caliber: Number
+}
+
+type HumanWithGun = Character & Gun;
+
+const arnold: HumanWithGun = {
+  name: "Arnold",
+  type: "Shotgun",
+  caliber: 12
+};
+
+console.log(arnold);
+console.log(arnold.caliber)
+
+// 7 - ReadOnly Array | aplica a propriedade somente leitura e tipa o array, os itens podem ser modificados mas
+// o comprimento do array não
+let myArray: ReadonlyArray<string> = ['maçã', 'laranja', 'banana'];
+
+// myArray[3] = 'mamão';
+
+console.log(myArray);
+
+myArray.forEach(item => {
+  console.log('Fruta: ' + item);
+})
+
+myArray = myArray.map(item => {
+  return `Fruta: ${item}`
+});
+
+console.log(myArray);
+
+// 8 - Tuplas | um array onde definimos o tamanho e o tipo dos elementos
+type fiveNumbers = [number, number, number, number, number];
+
+const myNumberArray: fiveNumbers = [1, 2, 3, 4, 5];
+// const myNumberArray2: fiveNumbers = [1, 2, 3, 4, 5, 6]
+// const mixedArray: fiveNumbers = [1, true, 'teste', 4, 5];
+
+console.log(myNumberArray);
+
+type nameAndAge = [string, number];
+
+const anotherUser: nameAndAge = ['Paulo', 20];
+
+console.log(anotherUser[0]);
+
+anotherUser[0] = 'João';
+// anotherUser[1] = 'Paulo';
+
+// 9 - Tuplas com readonly | similar às tuplas de python, tem tamanho e tipo restritos e são imutáveis
+function showNumbers(numbers: readonly [number, number]) {
+  numbers.forEach(number => {
+    console.log(number);
+  });
+}
+
+showNumbers([1, 2]);
