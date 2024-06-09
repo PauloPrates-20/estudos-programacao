@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários em HTML</title>
+</head>
+<body>
+  <main>
+    <h1>Formulário</h1>
+    <hr>
+    <br>
+
+    <form acton="" method="post">
+      <div>
+        <label for="texto">Nome:</label>
+        <input type="text" id="texto" name="nome">
+      </div>
+
+      <div>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div>
+        <label for="data">Data de nascimento: </label>
+        <input type="date" id="data" nome="data">
+      </div>
+
+      <div>
+        <label for="hora">Hora: </label>
+        <input type="time" name="hora" id="hora">
+      </div>
+
+      <div>
+        <label for="numero">Número:</label>
+        <input type="number" name="number" id="number">
+      </div>
+
+      <div>
+        <label for="arquivo">Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo">
+      </div>
+
+      <div>
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url">
+      </div>
+
+      <div>
+        <label for="color">Cor:</label>
+        <input type="color" id="color" name="color">
+      </div>
+
+      <div>
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" value="100" min="100" max="200">
+      </div>
+
+      <div>
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" name="checkbox" id="checkbox" checked>
+      </div>
+
+      <div>
+        <label for="radio">Radio:</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+
+      <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+      <br><br>
+
+      <div>
+        <select name="select" id="select">
+          <option value="" disabled selected>Selecione uma das opções...</option>
+          <option value="receita">Receita</option>
+          <option value="despesa">Despesa</option>
+          <option value="transferencia">Transferência</option>
+        </select>
+      </div>
+
+
+      <div>
+        <!-- <label for="reset">Reset</label> -->
+        <input type="reset" name="reset" id="reset" value="Limpar">
+      </div>
+
+      <div>
+        <!-- <label for="submit">Enviar</label> -->
+        <input type="submit" id="submit" name="submit" value="Enviar">
+      </div>
+
+    </form>
+  </main>
+</body>
+</html>
