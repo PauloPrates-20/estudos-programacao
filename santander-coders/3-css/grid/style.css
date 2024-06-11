@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.box p, .box button {
+  font-size: 4rem;
+}
+
+.boxes {
+  height: 100vh;
+  position: relative;
+
+  display: grid;
+  /* row-gap: 2rem; */
+  /* column-gap: 5rem; */
+  gap: 2rem 5rem;
+
+  /* grid-template-columns: 1fr 3fr 1fr; */
+  grid-template-columns: 3fr repeat(2, 1fr);
+  /* grid-template-rows: 1fr; */
+}
+
+.box {
+  background-color: #00f;
+  color: #fff;
+  border: 1rem solid #f00;
+  text-align: center;
+}
