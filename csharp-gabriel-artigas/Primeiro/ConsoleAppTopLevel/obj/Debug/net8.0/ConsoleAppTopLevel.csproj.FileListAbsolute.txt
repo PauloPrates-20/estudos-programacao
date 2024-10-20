@@ -1,0 +1,15 @@
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\bin\Debug\net8.0\ConsoleAppTopLevel.exe
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\bin\Debug\net8.0\ConsoleAppTopLevel.deps.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\bin\Debug\net8.0\ConsoleAppTopLevel.runtimeconfig.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\bin\Debug\net8.0\ConsoleAppTopLevel.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\bin\Debug\net8.0\ConsoleAppTopLevel.pdb
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.AssemblyInfoInputs.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.AssemblyInfo.cs
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.csproj.CoreCompileInputs.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.sourcelink.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\refint\ConsoleAppTopLevel.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.pdb
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ConsoleAppTopLevel.genruntimeconfig.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppTopLevel\obj\Debug\net8.0\ref\ConsoleAppTopLevel.dll

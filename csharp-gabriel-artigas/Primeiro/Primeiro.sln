@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlaMundo", "OlaMundo\OlaMundo.csproj", "{A410AD37-0891-4DB5-9776-CD0A64C4335F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlaMundo", "OlaMundo\OlaMundo.csproj", "{A410AD37-0891-4DB5-9776-CD0A64C4335F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAppNetFramework", "FormsAppNetFramework\FormsAppNetFramework.csproj", "{3C3B5ACE-0FC2-41BA-BA9B-2D6E0685A0E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDotNet", "ConsoleAppDotNet\ConsoleAppDotNet.csproj", "{9F79ACCD-3130-4912-BA5D-18964A9A7236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppDotNet", "ConsoleAppDotNet\ConsoleAppDotNet.csproj", "{9F79ACCD-3130-4912-BA5D-18964A9A7236}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNetFramework", "ConsoleAppNetFramework\ConsoleAppNetFramework.csproj", "{613F748F-6A46-49F1-A8AA-E341BBB7B54C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTopLevel", "ConsoleAppTopLevel\ConsoleAppTopLevel.csproj", "{EF4CE7D5-30AF-47C9-ABBA-CB288838FA4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{613F748F-6A46-49F1-A8AA-E341BBB7B54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{613F748F-6A46-49F1-A8AA-E341BBB7B54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{613F748F-6A46-49F1-A8AA-E341BBB7B54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4CE7D5-30AF-47C9-ABBA-CB288838FA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4CE7D5-30AF-47C9-ABBA-CB288838FA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4CE7D5-30AF-47C9-ABBA-CB288838FA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4CE7D5-30AF-47C9-ABBA-CB288838FA4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
