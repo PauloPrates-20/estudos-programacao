@@ -10,11 +10,19 @@
          */
         static void Main(string[] args)
         {
-            // Escreve a mensagem "Olá, Mundo!"
+            #region Escreve as quatro primeiras mensagens.
             Console.WriteLine("Primeiro Comando");
             Console.WriteLine("Segundo Comando");
-            //Console.WriteLine("Terceiro Comando");
+            Console.WriteLine("Terceiro Comando");
             Console.WriteLine("Quarto Comando");
+            #endregion
+
+            #region Executa outros comandos.
+            Console.WriteLine("Demais Comandos");
+            Console.WriteLine("Demais Comandos");
+            Console.WriteLine("Demais Comandos");
+            Console.WriteLine("Demais Comandos");
+            #endregion
         }
     }
 }
