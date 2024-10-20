@@ -1,0 +1,15 @@
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\bin\Debug\net8.0\ConsoleAppDotNet.exe
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\bin\Debug\net8.0\ConsoleAppDotNet.deps.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\bin\Debug\net8.0\ConsoleAppDotNet.runtimeconfig.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\bin\Debug\net8.0\ConsoleAppDotNet.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\bin\Debug\net8.0\ConsoleAppDotNet.pdb
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.AssemblyInfoInputs.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.AssemblyInfo.cs
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.csproj.CoreCompileInputs.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.sourcelink.json
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\refint\ConsoleAppDotNet.dll
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.pdb
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ConsoleAppDotNet.genruntimeconfig.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppDotNet\obj\Debug\net8.0\ref\ConsoleAppDotNet.dll

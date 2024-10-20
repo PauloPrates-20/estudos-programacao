@@ -1,0 +1,7 @@
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\bin\Debug\ConsoleAppNetFramework.exe.config
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\bin\Debug\ConsoleAppNetFramework.exe
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\bin\Debug\ConsoleAppNetFramework.pdb
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\obj\Debug\ConsoleAppNetFramework.csproj.AssemblyReference.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\obj\Debug\ConsoleAppNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\obj\Debug\ConsoleAppNetFramework.exe
+C:\Users\PauloPrates\Documents\_github\estudos-programacao\csharp-gabriel-artigas\Primeiro\ConsoleAppNetFramework\obj\Debug\ConsoleAppNetFramework.pdb
