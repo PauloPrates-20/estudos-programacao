@@ -31,13 +31,18 @@
 
             //double valor;
             //valor  = real1;
-            #endregion 
+            #endregion
 
+            #region Caracter
             char letra = '\u0061'; // letra a
             char escape = '\\';
             char literal = 'C';
+            #endregion
 
-            Console.WriteLine(escape);
+            bool verificar = false;
+            verificar = true;
+
+            Console.WriteLine(verificar);
             Console.ReadKey();
         }
     }
