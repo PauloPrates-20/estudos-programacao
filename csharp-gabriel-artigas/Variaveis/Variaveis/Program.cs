@@ -2,6 +2,12 @@
 {
     internal class Program
     {
+        // Enumerações devem ser declaradas fora do método Main
+        enum Notas { 
+            Minimo = 10, 
+            Media = 20, 
+            Maxima = 30,
+        }
         static void Main(string[] args)
         {
             #region Numericas Inteiras
@@ -66,6 +72,11 @@
             #region Constantes
             //const double pi = 3.1415;
             //const string nome = "Paulo";
+            #endregion
+
+            #region Enum
+            // Forma de definir um conjunto de constantes numéricas inteiras
+            //Notas notasAlunos = Notas.Media; 
             #endregion
 
             Console.WriteLine();
