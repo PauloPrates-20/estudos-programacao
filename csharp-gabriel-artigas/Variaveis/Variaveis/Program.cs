@@ -44,12 +44,18 @@
             //verificar = true;
             #endregion
 
+            #region Strings
             // Variável por referência
-            string texto = @"Paulo Prates\n 2003 @@@???$$$"; // @ anula caracteres de escape
-            string mensagem = null;
-            mensagem = texto;
+            //string texto = @"Paulo Prates\n 2003 @@@???$$$"; // @ anula caracteres de escape
+            //string mensagem = null;
+            //mensagem = texto;
+            #endregion
 
-            Console.WriteLine(mensagem);
+            // Possui tipo implícito
+            var valor = 100;
+            valor = 20;
+
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
