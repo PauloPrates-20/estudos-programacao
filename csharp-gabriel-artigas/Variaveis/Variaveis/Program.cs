@@ -34,15 +34,22 @@
             #endregion
 
             #region Caracter
-            char letra = '\u0061'; // letra a
-            char escape = '\\';
-            char literal = 'C';
+            //char letra = '\u0061'; // letra a
+            //char escape = '\\';
+            //char literal = 'C';
             #endregion
 
-            bool verificar = false;
-            verificar = true;
+            #region Boolean
+            //bool verificar = false;
+            //verificar = true;
+            #endregion
 
-            Console.WriteLine(verificar);
+            // Variável por referência
+            string texto = @"Paulo Prates\n 2003 @@@???$$$"; // @ anula caracteres de escape
+            string mensagem = null;
+            mensagem = texto;
+
+            Console.WriteLine(mensagem);
             Console.ReadKey();
         }
     }
