@@ -8,6 +8,14 @@
             Media = 20, 
             Maxima = 30,
         }
+
+        // Estruturas devem ser declaradas fora do método Main
+        struct Pessoa {
+            public string nome;
+            public int idade;
+            public double altura;
+        }
+
         static void Main(string[] args)
         {
             #region Numericas Inteiras
@@ -77,6 +85,23 @@
             #region Enum
             // Forma de definir um conjunto de constantes numéricas inteiras
             //Notas notasAlunos = Notas.Media; 
+            #endregion
+
+            #region Struct
+            // Estruturas personalizadas de dados
+            //Pessoa pessoa1 = new Pessoa();
+            //pessoa1.altura = 1.75;
+            //pessoa1.idade = 21;
+            //pessoa1.nome = "Paulo";
+
+            //Pessoa pessoa2 = new Pessoa()
+            //{
+            //    altura = 1.55,
+            //    idade = 12,
+            //    nome = "Willian"
+            //};
+
+            //pessoa1.nome = "Alguém";
             #endregion
 
             Console.WriteLine();
