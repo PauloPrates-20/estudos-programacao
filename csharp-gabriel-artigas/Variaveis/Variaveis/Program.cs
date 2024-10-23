@@ -51,9 +51,22 @@
             //mensagem = texto;
             #endregion
 
+            #region Var
             // Possui tipo implícito
-            var valor = 100;
-            valor = 20;
+            //var valor = 100;
+            //valor = 20;
+            #endregion
+
+            #region Tipo Object
+            // Tipo fundamental do C#, comporta todos os tipos de dados.
+            //object obj = true;
+            //obj = 200;
+            #endregion
+
+            #region Constantes
+            //const double pi = 3.1415;
+            //const string nome = "Paulo";
+            #endregion
 
             Console.WriteLine();
             Console.ReadKey();
