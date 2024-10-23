@@ -24,14 +24,20 @@
             //numero = num1;
             #endregion
 
-            float real1 = 100.75f; // 32 bits
-            double real2 = 500.754; // 64 bits
-            decimal real3 = 752538.457m; // 128 bits 
+            #region Numericas Reais
+            //float real1 = 100.75f; // 32 bits
+            //double real2 = 500.754; // 64 bits
+            //decimal real3 = 752538.457m; // 128 bits 
 
-            double valor;
-            valor  = real1;
+            //double valor;
+            //valor  = real1;
+            #endregion 
 
-            Console.WriteLine(valor);
+            char letra = '\u0061'; // letra a
+            char escape = '\\';
+            char literal = 'C';
+
+            Console.WriteLine(escape);
             Console.ReadKey();
         }
     }
