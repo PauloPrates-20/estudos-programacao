@@ -37,7 +37,7 @@ namespace ConversorTemperaturas
             //k = c + 273.15;
             //Console.WriteLine(c + " graus celcius = " + f + " graus farenheit");
             //Console.WriteLine(c + " graus celcius = " + k + " kelvin");
-            Console.WriteLine("----------------------------------");
+            //Console.WriteLine("----------------------------------");
         }
     }
 }
