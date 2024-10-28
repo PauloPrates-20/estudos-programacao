@@ -34,11 +34,27 @@ namespace Operadores
             // num1--;
             #endregion
 
-            string nome = "Paulo";
-            string sobrenome = "Prates";
-            string nomeCompleto = nome + " " + sobrenome + " " + 2003;
+            #region Operador de Concatenação
+            //string nome = "Paulo";
+            //string sobrenome = "Prates";
+            //string nomeCompleto = nome + " " + sobrenome + " " + 2003;
+            #endregion
 
-            Console.WriteLine(nomeCompleto);
+            #region Operadores de Atribuição
+            //int num1 = 10;
+
+            //num1 = num1 + 20;
+            //num1 += 20;
+            //num1 -= 2;
+            //num1 *= 3;
+            //num1 /= 2;
+            //num1 %= 2;
+
+            //string nome = "Paulo";
+            //nome += " Prates";
+            #endregion
+
+            Console.WriteLine();
         }
     }
 }
