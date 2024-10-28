@@ -24,16 +24,21 @@ namespace Operadores
             //double res = (num1 + num2) * (num3 / 3);
             #endregion
 
-            int num1 = 10;
+            #region Operadores de Incremento e Decremento
+            //int num1 = 10;
 
             // num1 = num1 + 1;
             // ++num1;
             // num1++;
             // --num1;
             // num1--;
+            #endregion
 
-            Console.WriteLine(num1++);
-            Console.WriteLine(num1);
+            string nome = "Paulo";
+            string sobrenome = "Prates";
+            string nomeCompleto = nome + " " + sobrenome + " " + 2003;
+
+            Console.WriteLine(nomeCompleto);
         }
     }
 }
