@@ -42,7 +42,13 @@ namespace Conversao
             //float num3 = float.Parse("457,75");
             #endregion
 
-            Console.WriteLine();
+            string texto = Convert.ToString(false);
+
+            double num1 = Convert.ToDouble(false);
+
+            int num2 = Convert.ToInt32('C');
+
+            Console.WriteLine(num2);
             Console.ReadKey();
         }
     }
