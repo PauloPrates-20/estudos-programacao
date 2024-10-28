@@ -10,15 +10,19 @@ namespace Operadores
     {
         static void Main(string[] args)
         {
-            int num1 = 10;
-            int num2 = 2;
+            #region Operadores Aritméticos
+            //int num1 = 10;
+            //int num2 = 2;
             //int resultado = num1 + num2;
+            #endregion
 
-            Console.WriteLine(num1 + num2);
-            Console.WriteLine(num1 - num2);
-            Console.WriteLine(num1 * num2);
-            Console.WriteLine(num1 / num2);
-            Console.WriteLine(num1 % num2);
+            double num1 = 100;
+            double num2 = 10;
+            double num3 = 5;
+
+            double res = (num1 + num2) * (num3 / 3);
+
+            Console.WriteLine(res);
         }
     }
 }
