@@ -10,15 +10,27 @@ namespace Conversao
     {
         static void Main(string[] args)
         {
-            byte num1 = 100;
-            ushort num2;
+            #region Convesão Implícita
+            //byte num1 = 100;
+            //ushort num2;
 
-            float num3 = 1250.45f;
-            double num4 = num3;
+            //float num3 = 1250.45f;
+            //double num4 = num3;
 
-            int numero = 'C';
+            //int numero = 'C';
+            #endregion
 
-            Console.WriteLine(numero);
+            #region Conversão Explícita
+            //ushort num1 = 100;
+            //byte num2 = (byte)num1;
+
+            //float num3 = 2500.786f;
+            //int num4 = (int)1985.75f;
+
+            //char letra = (char)97;
+            #endregion
+
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
