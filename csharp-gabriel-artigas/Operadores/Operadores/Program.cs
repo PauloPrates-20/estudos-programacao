@@ -54,6 +54,14 @@ namespace Operadores
             //nome += " Prates";
             #endregion
 
+            #region Operadores de Igualdade
+            //bool res = 100 == (50 * 2);
+            //bool res2 = (200 / 2) != (100 + 100);
+
+            //string nome = "Paulo";
+            //bool res3 = nome != "Pedro";
+            #endregion
+
             Console.WriteLine();
         }
     }
