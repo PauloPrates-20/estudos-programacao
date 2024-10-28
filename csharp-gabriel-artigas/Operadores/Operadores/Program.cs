@@ -62,6 +62,13 @@ namespace Operadores
             //bool res3 = nome != "Pedro";
             #endregion
 
+            #region Operadores Relacionais
+            //bool res = 100 < 50 * 2;
+            //bool res = 100 + 25 > 50 * 2;
+            //bool res = 100 <= 50 * 2;
+            //bool res = 75 >= 50;
+            #endregion
+
             Console.WriteLine();
         }
     }
