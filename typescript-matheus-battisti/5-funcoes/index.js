@@ -1,14 +1,4 @@
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
+"use strict";
 // 1 - void
 function semRetorno() {
     console.log("Esta função não tem retorno");
@@ -16,11 +6,11 @@ function semRetorno() {
 semRetorno();
 // 2 - callback como argumento
 function greeting(nome) {
-    return "Ol\u00E1, ".concat(nome, "!");
+    return `Olá, ${nome}!`;
 }
 function preGreeting(f, userName) {
     console.log("Preparando a função!");
-    var greet = f(userName);
+    const greet = f(userName);
     console.log(greet);
 }
 preGreeting(greeting, "Paulo");
@@ -31,13 +21,16 @@ function primeiroElemento(arr) {
 console.log(primeiroElemento([1, 2, 3]));
 console.log(primeiroElemento(["a", "b", "c"]));
 function mesclarObjetos(obj1, obj2) {
-    return __assign(__assign({}, obj1), obj2);
+    return {
+        ...obj1,
+        ...obj2
+    };
 }
-var novoObjeto = mesclarObjetos({ nome: "Paulo" }, { idade: 30, profissao: "Vagabundo" });
+const novoObjeto = mesclarObjetos({ nome: "Paulo" }, { idade: 30, profissao: "Vagabundo" });
 console.log(novoObjeto);
 // 4 - Constraints nas generic functions
 function maior(a, b) {
-    var maior;
+    let maior;
     if (+a > +b) {
         maior = a;
     }
@@ -58,15 +51,14 @@ console.log(mesclarArrays([1, 2, 3], ["teste", "testando"]));
 // 6 - parâmetros opcionais
 function modernGreeting(nome, greet) {
     if (greet) {
-        return "Ol\u00E1, ".concat(greet, " ").concat(nome, ". Tudo bem?");
+        return `Olá, ${greet} ${nome}. Tudo bem?`;
     }
-    return "Ol\u00E1, ".concat(nome, ". Tudo bem?");
+    return `Olá, ${nome}. Tudo bem?`;
 }
 console.log(modernGreeting("Paulo"));
 console.log(modernGreeting("Paulo", "Sr."));
 // 7 - parâmetro default
-function somaDefault(n, m) {
-    if (m === void 0) { m = 10; }
+function somaDefault(n, m = 10) {
     return n + m;
 }
 console.log(somaDefault(2));
@@ -88,19 +80,14 @@ function showErrorMessage(msg) {
 }
 // showErrorMessage("Algum Erro!");
 // 10 - Rest Operator
-function somarTodos() {
-    var n = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        n[_i] = arguments[_i];
-    }
-    return n.reduce(function (numero, soma) { return soma + numero; });
+function somarTodos(...n) {
+    return n.reduce((numero, soma) => soma + numero);
 }
 console.log(somarTodos(1, 2, 3, 4, 5));
 console.log(somarTodos(5, 358, 20093));
 // 11 - destructuring como parametro
-function showProductDetails(_a) {
-    var nome = _a.nome, preco = _a.preco;
-    return "O nome do produto \u00E9 ".concat(nome, " e ele custa R$").concat(preco);
+function showProductDetails({ nome, preco }) {
+    return `O nome do produto é ${nome} e ele custa R$${preco}`;
 }
-var camisa = { nome: "Camisa", preco: 49.99 };
+const camisa = { nome: "Camisa", preco: 49.99 };
 console.log(showProductDetails(camisa));

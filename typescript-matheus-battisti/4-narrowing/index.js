@@ -1,19 +1,5 @@
+"use strict";
 // 1 - type guard | verificação de tipo com typeof retorna os tipos em strings
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 function soma(a, b) {
     if (typeof (a) === "string" && typeof (b) === "string") {
         console.log(parseFloat(a) + parseFloat(b));
@@ -32,11 +18,11 @@ soma("32", 7);
 function operacoes(arr, operacao) {
     if (operacao) {
         if (operacao === "soma") {
-            var soma_1 = arr.reduce(function (i, total) { return i + total; });
-            console.log(soma_1);
+            const soma = arr.reduce((i, total) => i + total);
+            console.log(soma);
         }
         else if (operacao === "mult") {
-            var mult = arr.reduce(function (i, total) { return i * total; });
+            const mult = arr.reduce((i, total) => i * total);
             console.log(mult);
         }
     }
@@ -53,45 +39,41 @@ operacoes([
 ], "mult");
 // 3 - instance of || verifica se o dado pertence a uma determinada classe,
 // servindo até para classes personalizadas
-var Usuario = /** @class */ (function () {
-    function Usuario(nome) {
+class Usuario {
+    constructor(nome) {
         this.nome = nome;
     }
-    return Usuario;
-}());
-var superUsuario = /** @class */ (function (_super) {
-    __extends(superUsuario, _super);
-    function superUsuario(nome) {
-        return _super.call(this, nome) || this;
+}
+class superUsuario extends Usuario {
+    constructor(nome) {
+        super(nome);
     }
-    return superUsuario;
-}(Usuario));
-var victor = new Usuario("Victor");
-var paulo = new superUsuario("Paulo");
+}
+const victor = new Usuario("Victor");
+const paulo = new superUsuario("Paulo");
 console.log(victor);
 console.log(paulo);
 function greeting(usuario) {
     if (usuario instanceof superUsuario) {
-        console.log("Ol\u00E1. ".concat(usuario.nome, ". Deseja acessar os dados do sistema?"));
+        console.log(`Olá. ${usuario.nome}. Deseja acessar os dados do sistema?`);
     }
     else if (usuario instanceof Usuario) {
-        console.log("Ol\u00E1, ".concat(usuario.nome));
+        console.log(`Olá, ${usuario.nome}`);
     }
 }
 greeting(victor);
 greeting(paulo);
 // 4 - operador in || utilizado para checar se uma propriedade existe no objeto
-var Cachorro = /** @class */ (function () {
-    function Cachorro(nome, raca) {
+class Cachorro {
+    constructor(nome, raca) {
         this.nome = nome;
         if (raca) {
             this.raca = raca;
         }
     }
-    return Cachorro;
-}());
-var turca = new Cachorro("Turca");
-var bob = new Cachorro("Bob", "Pastor Alemão");
+}
+const turca = new Cachorro("Turca");
+const bob = new Cachorro("Bob", "Pastor Alemão");
 function mostrarDetalhes(cachorro) {
     if ("raca" in cachorro) {
         console.log("O cachorro é da raça " + cachorro.raca);
