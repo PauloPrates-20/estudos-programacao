@@ -1,7 +1,7 @@
 // 1 - campos em classe
 class User {
-  name: string;
-  age: number;
+  name!: string;
+  age!: number;
 };
 
 const paulo = new User();
@@ -162,3 +162,122 @@ myCoords.fillX = 2;
 myCoords.fillY = 0;
 myCoords.fillY = 10;
 console.log(myCoords.getCoords);
+
+// 9 - herança de interfaces (implements)
+interface showTitle {
+  itemTitle(): string;
+}
+
+class BlogPosts implements showTitle {
+  title;
+
+  constructor(title: string) {
+    this.title = title;
+  }
+
+  itemTitle() {
+    return `O título do post é ${this.title}`;
+  }
+};
+
+const myPost = new BlogPosts('My post');
+console.log(myPost.itemTitle());
+
+class TestingInterface implements showTitle {
+  title;
+
+  constructor(title: string) {
+    this.title = title;
+  }
+
+  itemTitle() {
+    return `O título é ${this.title}`;
+  }
+}
+
+// 10 - override de métodos
+// uma técnica utilizada para substituir um método herdado por uma classe
+// Basta criar um método com o mesmo nome na classe filha
+class Base {
+  someMethod() {
+    console.log('Alguma coisa');
+  }
+};
+
+class Nova extends Base {
+  someMethod() {
+    console.log('Testando outra coisa');
+  }
+}
+
+const myObject = new Nova();
+myObject.someMethod();
+
+// 11 - visibilidade
+// 11.1 - public
+class C {
+  public x = 10;
+};
+
+class D extends C {
+
+};
+
+const cInstance = new C();
+const dInstance = new D();
+
+console.log(cInstance.x);
+console.log(dInstance.x);
+
+
+// 11.2 - protected
+class E {
+  protected x = 10;
+
+
+};
+
+class F extends E {
+  get getX() {
+    return this.x;
+  }
+}
+
+// Propriedades protected só podem ser acessadas por métodos dentro da classe e das subclasses
+const eInstance = new E();
+const fInstace = new F();
+console.log(fInstace.getX);
+
+// 11.3 - private
+// propriedades e métodos private só podem ser acessadas por métodos dentro da classe que as definiu
+class PrivateClass {
+  private name = 'Private';
+
+  get getName() {
+    return this.name;
+  }
+
+  private privateMethod() {
+    console.log('Método privado');
+  }
+
+  showPrivateMethod() {
+    this.privateMethod();
+  }
+};
+
+// Não pode acessar o método privado
+// class TestePrivate extends PrivateClass {
+//   myMethod() {
+//     this.privateMethod();
+//   }
+// };
+
+const pObj = new PrivateClass();
+
+console.log(pObj.getName);
+pObj.showPrivateMethod();
+
+// const testeObj = new TestePrivate();
+
+

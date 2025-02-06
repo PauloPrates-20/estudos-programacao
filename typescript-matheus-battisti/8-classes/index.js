@@ -162,3 +162,127 @@ myCoords.fillX = 2;
 myCoords.fillY = 0;
 myCoords.fillY = 10;
 console.log(myCoords.getCoords);
+var BlogPosts = /** @class */ (function () {
+    function BlogPosts(title) {
+        this.title = title;
+    }
+    BlogPosts.prototype.itemTitle = function () {
+        return "O t\u00EDtulo do post \u00E9 ".concat(this.title);
+    };
+    return BlogPosts;
+}());
+;
+var myPost = new BlogPosts('My post');
+console.log(myPost.itemTitle());
+var TestingInterface = /** @class */ (function () {
+    function TestingInterface(title) {
+        this.title = title;
+    }
+    TestingInterface.prototype.itemTitle = function () {
+        return "O t\u00EDtulo \u00E9 ".concat(this.title);
+    };
+    return TestingInterface;
+}());
+// 10 - override de métodos
+// uma técnica utilizada para substituir um método herdado por uma classe
+// Basta criar um método com o mesmo nome na classe filha
+var Base = /** @class */ (function () {
+    function Base() {
+    }
+    Base.prototype.someMethod = function () {
+        console.log('Alguma coisa');
+    };
+    return Base;
+}());
+;
+var Nova = /** @class */ (function (_super) {
+    __extends(Nova, _super);
+    function Nova() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Nova.prototype.someMethod = function () {
+        console.log('Testando outra coisa');
+    };
+    return Nova;
+}(Base));
+var myObject = new Nova();
+myObject.someMethod();
+// 11 - visibilidade
+// 11.1 - public
+var C = /** @class */ (function () {
+    function C() {
+        this.x = 10;
+    }
+    return C;
+}());
+;
+var D = /** @class */ (function (_super) {
+    __extends(D, _super);
+    function D() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return D;
+}(C));
+;
+var cInstance = new C();
+var dInstance = new D();
+console.log(cInstance.x);
+console.log(dInstance.x);
+// 11.2 - protected
+var E = /** @class */ (function () {
+    function E() {
+        this.x = 10;
+    }
+    return E;
+}());
+;
+var F = /** @class */ (function (_super) {
+    __extends(F, _super);
+    function F() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Object.defineProperty(F.prototype, "getX", {
+        get: function () {
+            return this.x;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return F;
+}(E));
+// Propriedades protected só podem ser acessadas por métodos dentro da classe e das subclasses
+var eInstance = new E();
+var fInstace = new F();
+console.log(fInstace.getX);
+// 11.3 - private
+// propriedades e métodos private só podem ser acessadas por métodos dentro da classe que as definiu
+var PrivateClass = /** @class */ (function () {
+    function PrivateClass() {
+        this.name = 'Private';
+    }
+    Object.defineProperty(PrivateClass.prototype, "getName", {
+        get: function () {
+            return this.name;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    PrivateClass.prototype.privateMethod = function () {
+        console.log('Método privado');
+    };
+    PrivateClass.prototype.showPrivateMethod = function () {
+        this.privateMethod();
+    };
+    return PrivateClass;
+}());
+;
+// Não pode acessar o método privado
+// class TestePrivate extends PrivateClass {
+//   myMethod() {
+//     this.privateMethod();
+//   }
+// };
+var pObj = new PrivateClass();
+console.log(pObj.getName);
+pObj.showPrivateMethod();
+// const testeObj = new TestePrivate();
