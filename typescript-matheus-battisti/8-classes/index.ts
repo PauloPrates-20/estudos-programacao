@@ -280,4 +280,115 @@ pObj.showPrivateMethod();
 
 // const testeObj = new TestePrivate();
 
+// 12 - static members
+class StaticMembers {
+ static prop = 'Teste Static';
 
+ static staticMethod() {
+  console.log('Este é um método estático');
+ }
+};
+
+console.log(StaticMembers.prop);
+StaticMembers.staticMethod();
+
+// 13 - generic class
+class Item<T, U> {
+  first;
+  second;
+
+  constructor(first: T, second: U) {
+    this.first = first;
+    this.second = second;
+  }
+
+  get showFirst() {
+    return `O first é ${this.first}`;
+  }
+};
+
+const newItem = new Item('Caixa', 'Surpresa');
+
+console.log(newItem);
+console.log(typeof newItem.first);
+console.log(newItem.showFirst);
+
+const secondItem = new Item(12, true);
+
+console.log(secondItem);
+console.log(typeof secondItem.first);
+console.log(secondItem.showFirst);
+
+// 14 - parameter properties
+class ParameterProperties {
+  constructor(public name: string, private _qty: number, private _price: number) {
+    this.name = name;
+    this._qty = _qty;
+    this._price = _price;
+  }
+
+  get qty() {
+    return this._qty;
+  }
+
+  get price() {
+    return this._price;
+  }
+};
+
+const newShirt = new ParameterProperties('Camisa', 5, 19.99);
+console.log(newShirt.name);
+console.log(newShirt.qty);
+console.log(newShirt.price);
+
+// 15 - class expressions
+const myClass = class<T> {
+  name;
+
+  constructor(name: T) {
+    this.name = name;
+  }
+};
+
+const pessoa = new myClass('John');
+
+console.log(pessoa.name);
+console.log(pessoa);
+
+// 16 - abstract class
+// serve como molde para outras classes. Não pode instanciar objetos.
+abstract class AbstractClass {
+  abstract showName(): void;
+}
+
+class AbstractExample extends AbstractClass {
+  name: string;
+
+  constructor(name: string) {
+    super();
+    this.name = name;
+  }
+
+  showName() {
+    console.log(`O nome é ${this.name}`);
+  }
+}
+
+// Não pode instanciar
+// const newObj = new AbstractClass();
+const abstract = new AbstractExample('José');
+abstract.showName();
+
+// 17 - relação entre classes
+// Um objeto pode ser criado com base em outra classe se as classes forem idênticas.
+class Dog {
+  name!: string;
+}
+
+class Cat {
+  name!: string;
+};
+
+const doguinho: Dog = new Cat();
+
+console.log(doguinho);
