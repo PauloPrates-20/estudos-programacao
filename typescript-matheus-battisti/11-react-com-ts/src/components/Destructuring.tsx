@@ -3,9 +3,18 @@ type Props = {
   content: string;
   commentsQty: number;
   tags: string[]
+
+  // 8 - enum
+  category: Category
 }
 
-function Destructuring({ title, content, commentsQty, tags }: Props) {
+export enum Category {
+  JS = 'Javascript',
+  TS = 'TypeScript',
+  P = 'Python'
+}
+
+function Destructuring({ title, content, commentsQty, tags, category }: Props) {
   return (
     <div>
       <h2>{title}</h2>
@@ -16,6 +25,7 @@ function Destructuring({ title, content, commentsQty, tags }: Props) {
           <span key={index}>#{tag}</span>
         ))}
       </div>
+      <h4>Categoria: {category}</h4>
     </div>
   );
 }
