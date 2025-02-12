@@ -1,12 +1,34 @@
-import React from 'react'
+import { Task } from '../interfaces/Task'
+import styles from './TaskList.module.css'
 
-type Props = {}
+type Props = {
+  taskList: Task[];
+  handleDelete(id: Number): void;
+  handleEdit(): void;
+}
 
-function TaskList({}: Props) {
+function TaskList({ taskList, handleDelete, handleEdit }: Props) {
   return (
-    <div>
-      <p>Lista de tarefas</p>
-    </div>
+    <>
+      {taskList.length > 0 ? (
+        taskList.map(task => (
+          <div key={task.id}>
+            <div className={styles.task}>
+              <div className={styles.details}>
+                <h4>{task.title}</h4>
+                <p>Dificuldade: {task.difficulty}</p>
+              </div>
+              <div className={styles.actions}>
+                <i className='bi bi-pencil' onClick={handleEdit} />
+                <i className='bi bi-trash' onClick={() => handleDelete(task.id)} />
+              </div>
+            </div>
+          </div>
+        ))
+      ) : (
+        <p>Não há tarefas cadastradas</p>
+      )}
+    </>
   )
 }
 

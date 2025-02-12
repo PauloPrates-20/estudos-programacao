@@ -5,12 +5,27 @@ import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 import { Task } from "./interfaces/Task";
 import { useState } from "react";
+import Modal from "./components/Modal";
 
 function App() {
   const [taskList, setTaskList] = useState<Task[]>([]);
+
+  function deleteTask(id: number) {
+    setTaskList(taskList.filter(task => task.id !== id));
+  }
+
+  function toggleModal(display: boolean) {
+    const modal = document.querySelector('#modal');
+    display ? modal!.classList.remove('hide') : modal!.classList.add('hide');
+  }
+
+  function editTask() {
+    toggleModal(true);
+  }
   
   return (
     <div>
+      <Modal children={<TaskForm btnText='Editar tarefa' taskList={taskList} />} />
       <Header />
       <main className={styles.main}>
         <div>
@@ -19,7 +34,7 @@ function App() {
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <TaskList />
+          <TaskList taskList={taskList} handleDelete={deleteTask} handleEdit={editTask} />
         </div>
       </main>
       <Footer />
