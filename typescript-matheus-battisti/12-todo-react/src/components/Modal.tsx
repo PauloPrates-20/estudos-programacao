@@ -5,7 +5,7 @@ type Props = {
 }
 
 function Modal({ children }: Props) {
-  function closeModal(e: React.MouseEvent) {
+  function closeModal() {
     const modal = document.getElementById('modal');
     modal!.classList.add('hide');
   }
