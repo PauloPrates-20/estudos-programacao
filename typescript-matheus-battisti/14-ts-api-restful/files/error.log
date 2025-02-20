@@ -1,2 +1,5 @@
 2025-02-20 10:31:08 - [31merror[39m: [31mErro no sistema: Invalid namespace specified: movies/.movies[39m
 2025-02-20 10:32:53 - [31merror[39m: [31mErro no sistema: Invalid namespace specified: movies/.movies[39m
+2025-02-20 12:44:11 - [31merror[39m: [31mErro no sistema: Cannot set headers after they are sent to the client[39m
+2025-02-20 12:44:24 - [31merror[39m: [31mErro no sistema: Cannot set headers after they are sent to the client[39m
+2025-02-20 12:45:08 - [31merror[39m: [31mErro no sistema: Cannot set headers after they are sent to the client[39m
