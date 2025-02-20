@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import { validationResult } from 'express-validator'
+import { FieldValidationError, validationResult } from 'express-validator'
 
 export function validate(req: Request, res: Response, next: NextFunction) {
   const errors = validationResult(req);
@@ -8,7 +8,7 @@ export function validate(req: Request, res: Response, next: NextFunction) {
 
   const extractedErrors: object[] = []
   
-  errors.array().map((err) => extractedErrors.push( { [err.type]: err.msg }));
+  errors.array().map((err) => extractedErrors.push( { [(err as FieldValidationError).path]: err.msg }));
 
   res.status(422).json({
     errors: extractedErrors,

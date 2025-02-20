@@ -27,3 +27,45 @@
 2025-02-20 07:58:01 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
 2025-02-20 07:59:34 - [32minfo[39m: [32mConectado ao banco de dados[39m
 2025-02-20 07:59:34 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:29:10 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:29:10 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:30:25 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:30:25 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:30:28 - [35mhttp[39m: [35mGET /api//test 200 12 - 8.735 ms[39m
+[35m[39m
+2025-02-20 10:30:35 - [35mhttp[39m: [35mGET /api/test 200 12 - 1.383 ms[39m
+[35m[39m
+2025-02-20 10:30:58 - [35mhttp[39m: [35mGET /api/test 200 12 - 1.296 ms[39m
+[35m[39m
+2025-02-20 10:31:08 - [31merror[39m: [31mErro no sistema: Invalid namespace specified: movies/.movies[39m
+2025-02-20 10:32:48 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:32:48 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:32:53 - [31merror[39m: [31mErro no sistema: Invalid namespace specified: movies/.movies[39m
+2025-02-20 10:36:23 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:36:24 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:36:42 - [35mhttp[39m: [35mPOST /api/movie 201 131 - 72.043 ms[39m
+[35m[39m
+2025-02-20 10:41:41 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:41:41 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:41:45 - [35mhttp[39m: [35mPOST /api/movie 422 276 - 33.408 ms[39m
+[35m[39m
+2025-02-20 10:43:09 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:43:09 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:43:25 - [35mhttp[39m: [35mPOST /api/movie 422 150 - 24.651 ms[39m
+[35m[39m
+2025-02-20 10:51:47 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:51:47 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:52:23 - [35mhttp[39m: [35mPOST /api/movie 422 148 - 111.203 ms[39m
+[35m[39m
+2025-02-20 10:53:11 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:53:11 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:53:57 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:53:57 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:54:06 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:54:06 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:54:17 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:54:17 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:54:36 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:54:36 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2025-02-20 10:54:51 - [32minfo[39m: [32mConectado ao banco de dados[39m
+2025-02-20 10:54:51 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
